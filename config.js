@@ -2,17 +2,17 @@ require('dotenv').config(); // Load environment variables
 
 module.exports = {
     prefix: process.env.PREFIX || '.', // Command prefix
-    ownerName: process.env.OWNER_NAME || 'Toxxic', // Owner name
-    ownerNumber: process.env.OWNER_NUMBER || '2348165846414', // Your WhatsApp number
-    mode: process.env.MODE || 'public', // Bot mode: 'public' or 'private'
+    ownerName: process.env.OWNER_NAME || 'DAVID', // Owner name
+    ownerNumber: process.env.OWNER_NUMBER || '2348109243618', // Your WhatsApp number
+    mode: process.env.MODE || 'private', // Bot mode: 'public' or 'private'
     region: process.env.REGION || 'Nigeria', // Region
     botName: process.env.BOT_NAME || 'Rias Gremory V3', // Bot name
-    exifPack: process.env.EXIF_PACK || 'RIAS V3 LOVES', // Sticker pack name
-    exifAuthor: process.env.EXIF_AUTHOR || 'Toxxic', // Author of the sticker pack
-    timeZone: process.env.TIME_ZONE || 'Africa/Lagos', // Time zone
-    presenceStatus: process.env.PRESENCE_STATUS || 'recording', // Bot presence status
-    autoRead: process.env.AUTO_READ === 'true', // Auto-read messages (true or false)
-    autoViewStatus: process.env.AUTO_VIEW_STATUS === 'true', // Auto-view statuses (true or false)
-    autoReact: process.env.AUTO_REACT === 'true', // Auto-react (true or false)
-    sessionId: process.env.SESSION_ID || ''// Add Your Session ID here
+    exifPack: process.env.EXIF_PACK || '𝕵𝖊 𝖛𝖔𝖎𝖘 𝖘𝖙𝖎𝖈𝖐𝖊𝖗 𝖕𝖆𝖈𝖐', // Sticker pack name
+    exifAuthor: process.env.EXIF_AUTHOR || '𝕯𝖆𝖛𝖎𝖉', // Author of the sticker pack
+    timeZone: process.env.TIME_ZONE || 'Africa/kwara', // Time zone
+    presenceStatus: process.env.PRESENCE_STATUS || 'offline', // Bot presence status
+    autoRead: process.env.AUTO_READ === 'false', // Auto-read messages (true or false)
+    autoViewStatus: process.env.AUTO_VIEW_STATUS === 'false', // Auto-view statuses (true or false)
+    autoReact: process.env.AUTO_REACT === 'false', // Auto-react (true or false)
+    sessionId: process.env.SESSION_ID || 'eyJub2lzZUtleSI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoieUg4NzVLRFpIUTA0YmFFQmhXdHhHcGplR2tyYk9WZ0lsMXBmSmwwc1JtND0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoibWdYUmFNWmc5UzlMS0xGZ3hiY3BWTGliV1hnTWk0VjRteUlHRHFUSndEQT0ifX0sInBhaXJpbmdFcGhlbWVyYWxLZXlQYWlyIjp7InByaXZhdGUiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiIyRHpXOTduc0EyVXZHdmY4Snowc3BGdUhhYTRVM1FKVG1tUE51UmJFVm5zPSJ9LCJwdWJsaWMiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJsSGxCZ3k5VS85N1gwYTB0VlJuMk1tWU5YVlpqT3E5ZHBCdm9lcmFQYjE4PSJ9fSwic2lnbmVkSWRlbnRpdHlLZXkiOnsicHJpdmF0ZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6Im1KR1BnTEd0QkhqTHhvbTFUbzNYcmp6Tng1ZWNPd2RLUzgxelVBNGFYMk09In0sInB1YmxpYyI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IkFwZ0FHSXE4ejI0S2ZYaUpVN3E4ZTJPT3UwcmlibXkyK3hDbGpmemcwMnM9In19LCJzaWduZWRQcmVLZXkiOnsia2V5UGFpciI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoib0NZNjV3emNjcXI2MHhhRkRxRC80WFA5dlF5UTFRbTNmSjRKN0JBMVAyOD0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoibVRPa2h4Q3VlVTFOY1RnaGFoOTZGMEVUVUc3K2JDbitZck50bXJxQTNYQT0ifX0sInNpZ25hdHVyZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6Im9nOWEyQjl2OXhTRW5Faytqb2xhTzNUemN0eUlmVit4dEVndW9lYTZBQ0Z5V3VpTmp3UkRac3B3RTVMRXpmZlZmbnMyTy9RRVRVbkxXWWI4VWpKSmlBPT0ifSwia2V5SWQiOjF9LCJyZWdpc3RyYXRpb25JZCI6MjQ5LCJhZHZTZWNyZXRLZXkiOiJyWDllazFqSmhuYlgrNVhYZEkwVXZ0eHJIbFRsdEIxU0FVbkwrVitFOTA4PSIsInByb2Nlc3NlZEhpc3RvcnlNZXNzYWdlcyI6W10sIm5leHRQcmVLZXlJZCI6MzEsImZpcnN0VW51cGxvYWRlZFByZUtleUlkIjozMSwiYWNjb3VudFN5bmNDb3VudGVyIjowLCJhY2NvdW50U2V0dGluZ3MiOnsidW5hcmNoaXZlQ2hhdHMiOmZhbHNlfSwiZGV2aWNlSWQiOiJYeENzSEJCQ1RoS2lqRUpXVTNKU1V3IiwicGhvbmVJZCI6IjkwMjU0ZjJlLTVjMDAtNGY2MC1iYjg4LTM2M2YzMmRlOWJiMSIsImlkZW50aXR5SWQiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJycjA5WnpHUWhuZjhaUlduNkN5RUdVd3R1Zjg9In0sInJlZ2lzdGVyZWQiOnRydWUsImJhY2t1cFRva2VuIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiZUIyRVRGSzlYMzBzK3FWRW1EWDl4RDNqM2hZPSJ9LCJyZWdpc3RyYXRpb24iOnt9LCJwYWlyaW5nQ29kZSI6IjdWQkJONzkxIiwibWUiOnsiaWQiOiIyMzQ4MTA5MjQzNjE4OjkwQHMud2hhdHNhcHAubmV0In0sImFjY291bnQiOnsiZGV0YWlscyI6IkNOV3kxODhFRUsraXZic0dHQVFnQUNnQSIsImFjY291bnRTaWduYXR1cmVLZXkiOiJXTDJSNTlFcUIxOUhTeFhRenp2UkVtNWtyTVRRb1VIZ2EyT2pDUE5YcWpnPSIsImFjY291bnRTaWduYXR1cmUiOiJ6K2F1QmZwUnJUY21aUHVrN1pJTlV2L0dKbXlOemF6SXQ3eVRXbDlOOWU3TlJ4azV3L0V2S2xkRlpscms0ZXBTUU45STVpbGVYWWtaR0FPVDdQSVBDQT09IiwiZGV2aWNlU2lnbmF0dXJlIjoiVWFPeTZyVjhNTUo4U3RqUis4ZFlOOXpwTEhqK3AvcGROY1hDQndmZWNtQTZJeUpiOUI1WU9nVVFjVFNxaWtYMTQ2ME9VcEpVa1o0cG96SDc4NzhLZ3c9PSJ9LCJzaWduYWxJZGVudGl0aWVzIjpbeyJpZGVudGlmaWVyIjp7Im5hbWUiOiIyMzQ4MTA5MjQzNjE4OjkwQHMud2hhdHNhcHAubmV0IiwiZGV2aWNlSWQiOjB9LCJpZGVudGlmaWVyS2V5Ijp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiQlZpOWtlZlJLZ2RmUjBzVjBNODcwUkp1Wkt6RTBLRkI0R3Rqb3dqelY2bzQifX1dLCJwbGF0Zm9ybSI6ImFuZHJvaWQiLCJsYXN0QWNjb3VudFN5bmNUaW1lc3RhbXAiOjE3MzUzNDg1NDAsIm15QXBwU3RhdGVLZXlJZCI6IkFBQUFBQ2RoIn0='// Add Your Session ID here
 };
